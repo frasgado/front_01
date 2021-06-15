@@ -1,0 +1,33 @@
+h1 {
+    color: rgba(57, 57, 185, 0.604);
+    text-align: right;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: #46484c;
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: #8b8b8bcc;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: left;
+}
+
+button {
+    color: #fff;
+    background-color: #025157;
+}
+
+body {
+    /*background-color: #78fd50;*/
+    background-color: #fffbf7;
+    background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
+    /* https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png?w=200&h=200&dpr=1&q=75 
+    background-image: url(https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png); */
+}
