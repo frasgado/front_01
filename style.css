@@ -1,20 +1,41 @@
+* {
+    /*
+box-sizing permite indicar qué propiedades intervienen para calcular el tamaño de la caja.
+*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background-color: #78fd50;*/
+    background-color: #fffbf7;
+    /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
+    margin: 0;
+    /* https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png?w=200&h=200&dpr=1&q=75 
+    background-image: url(https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png); */
+    /*
+width, height, margin, padding, border y box-sizing. 
+*/
+}
+
 h1 {
     color: rgba(57, 57, 185, 0.604);
-    text-align: right;
+    text-align: left;
     font-size: 30px;
     font-family: sans-serif;
 }
 
 h2 {
     color: #46484c;
-    text-align: center;
+    text-align: left;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
     color: #8b8b8bcc;
-    font-family: cursive;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     text-align: left;
 }
@@ -24,10 +45,79 @@ button {
     background-color: #025157;
 }
 
-body {
-    /*background-color: #78fd50;*/
-    background-color: #fffbf7;
-    background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
-    /* https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png?w=200&h=200&dpr=1&q=75 
-    background-image: url(https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png); */
+.header {
+    /*  margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).*/
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 40px 20px 0 20px;
+    /*
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    */
+    font-size: 0;
+    line-height: 45px;
+    /*height: 45px;*/
+    font-family: sans-serif;
+}
+
+li {
+    display: inline;
+}
+
+
+/*Aplica a los hijos del header*/
+
+.header>* {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    /*height: 100%;*/
+    line-height: 45px;
+    /*height: 45px;*/
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 15%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;
+    /*color: green;*/
+    color: #025157;
+    font-weight: 500;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actions>* {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding-top: 12px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    border: 0;
+    border-radius: 5px;
 }
