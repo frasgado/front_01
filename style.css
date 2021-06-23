@@ -10,8 +10,9 @@ box-sizing permite indicar qué propiedades intervienen para calcular el tamaño
 body {
     /*background-color: #78fd50;*/
     background-color: #fffbf7;
+    font-family: "Open Sans", sans-serif;
     /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
-    margin: 0;
+    /* margin: 0; */
     /* https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png?w=200&h=200&dpr=1&q=75 
     background-image: url(https://coursereport-production.imgix.net/uploads/school/logo/529/original/bedu-logo-01.png); */
     /*
@@ -19,8 +20,14 @@ width, height, margin, padding, border y box-sizing.
 */
 }
 
+main {
+    margin-top: 115px;
+    /*285*/
+    text-align: left;
+}
+
 h1 {
-    color: rgba(57, 57, 185, 0.604);
+    color: #46484c;
     text-align: left;
     font-size: 30px;
     font-family: sans-serif;
@@ -29,14 +36,14 @@ h1 {
 h2 {
     color: #46484c;
     text-align: left;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 
 p {
     color: #8b8b8bcc;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -48,16 +55,19 @@ button {
 .header {
     /*  margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).*/
     /* Arriba | Derecha | Abajo | Izquierda */
-    margin: 40px 20px 0 20px;
+    /* margin: 40px 20px 0 20px; */
+    margin: 20px 10px 0 10px;
     /*
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
     */
     font-size: 0;
+    /* height: 45px; */
     line-height: 45px;
     /*height: 45px;*/
     font-family: sans-serif;
+    /* border: cyan 5px solid; */
 }
 
 li {
@@ -66,10 +76,13 @@ li {
 
 .fixed-header {
     position: fixed;
-    background-color: white;
+    /* background-color: white; */
     top: 0;
     left: 0;
     right: 0;
+    background-color: #fffbf7;
+    z-index: 10;
+    /* border: rebeccapurple 5px solid; */
 }
 
 
@@ -83,14 +96,24 @@ li {
     line-height: 45px;
     /*height: 45px;*/
     font-family: sans-serif;
+    /* border: green 5px solid; */
 }
 
 .logo {
     width: 15%;
 }
 
+.logo img {
+    /* width: 120px; */
+    margin-top: 10px;
+    /* text-align: center;
+    vertical-align: middle;
+    margin-top: 15px; */
+}
+
 .navbar {
-    width: 70%;
+    /* width: 70%; */
+    width: 68%;
     text-align: center;
     /*color: green;*/
     color: #025157;
@@ -104,7 +127,7 @@ li {
 }
 
 .actions {
-    width: 15%;
+    width: 17%;
     text-align: right;
     font-size: 14px;
     font-weight: 600;
@@ -132,11 +155,15 @@ li {
 
 .seccion {
     display: flex;
+    /* direction: ltr; */
     justify-content: space-between;
     align-items: center;
     width: 70%;
     margin: 100px auto;
+    /* margin: auto; */
     padding-top: 30px;
+    /* border: cyan 5px solid; */
+    align-items: center;
 }
 
 .article1 {
@@ -144,7 +171,8 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20px 10px;
+    /* border: red 5px solid; */
 }
 
 .article1 img {
@@ -154,33 +182,224 @@ li {
 
 .article1 h1 {
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 48px;
     color: #025157;
 }
 
 .article1>p {
     font-size: 16px;
-    color: #343434;
+    font-family: sans-serif;
+    color: #025157;
     line-height: 1.5;
     margin-bottom: 20px;
+    /* border: green 5px solid; */
 }
 
 .article1>form {
-    display: flex;
+    display: block;
+    /* border: orange 5px solid; */
+    width: 100%;
 }
 
 .article1>form p {
     color: #025157;
-    margin-right: 18px;
+    font-family: sans-serif;
+    /* margin-right: 18px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    /* border: blue 5px solid; */
+    text-align: left;
+    /* margin-right: 18px; */
 }
 
-.boton {
+.article1>form div {
+    display: flex;
+}
+
+.article1>form button {
     padding: 8px 12px;
     border-radius: 3px;
+    display: block;
+    /* width: 50px;
+    height: 50px; */
+    /* border-radius: 50%; */
+}
+
+.article1>form input[type="email"] {
+    /* background-color: yellow; */
+    /* width: 150px; */
+    width: 70%;
+    /* height: 36px; */
+    height: 47px;
+    font-weight: 600;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #d2d2d2;
+}
+
+.article1>form button {
+    -webkit-appearance: none;
+    background-color: #b17fbb;
+    font-weight: 600;
+    font-size: 0.85rem;
+    width: 30%;
+    /* height: 37px; */
+    height: 47px;
+    padding: 5px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0px solid #eee;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -1px;
 }
 
 
 /* .cuadro_derecho {
     display: flex;
 } */
+
+.casos-estudio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #a1d683;
+    /* margin: 20px 10px 0 10px; */
+    padding: 5% 15%;
+    /* left: 0; */
+    /* right: 0; */
+}
+
+.casos-estudio .left {
+    flex: 2;
+    /* padding-left: 0; */
+    padding-right: 100px;
+    /* width: 90%; */
+}
+
+.casos-estudio .left h2 {
+    font-family: sans-serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.casos-estudio .left p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.casos-estudio .left button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+.casos-estudio .left img {
+    /* width: 60%;
+    height: 40%; */
+    width: 500px;
+    max-width: 100%;
+    /* max-width: 100%; */
+}
+
+.casos-estudio .carrusel {
+    /* flex: 2; */
+    /* padding-right: 100px; */
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.casos-estudio .carrusel .card-media {
+    position: relative;
+}
+
+.casos-estudio .carrusel img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.casos-estudio .carrusel figure {
+    margin-top: 0;
+    width: 100%;
+}
+
+.casos-estudio .carrusel .company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casos-estudio .carrusel .card-body,
+.casos-estudio .carrusel .card-footer {
+    padding: 25px;
+}
+
+.casos-estudio .carrusel .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.casos-estudio .carrusel .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.casos-estudio .carrusel .card-body .results {
+    display: flex;
+    align-items: center;
+    color: #828282;
+}
+
+.casos-estudio .carrusel .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+}
+
+.casos-estudio .carrusel .card-body .results p {
+    margin-top: 0;
+}
+
+.casos-estudio .carrusel .card-footer {
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+}
+
+.casos-estudio .carrusel .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+}
