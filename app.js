@@ -14,11 +14,14 @@ const sendEmailToApi = (address, template) => {
             }),
         })
         .then((results) => {
-            console.log(results.status == 200)
-            if (results.status == 200)
-                console.log(results);
+            console.log(results.status);
+            if (results.status == 200) {
+                alert("E-mail send!!!")
+            } else {
+                alert("Send failed")
+            }
             document.getElementById("email").value = ""
-            alert("E-mail send!!!")
+                // alert("E-mail send!!!")
         })
         .catch((error) => {
             console.error(error);
@@ -36,15 +39,27 @@ function sendEmail(miVariable) {
     miVariable.preventDefault()
     const email = miVariable.target.querySelector("input").value
     getTemplate()
-        .then((response) => {
-            // console.log(response);
-            sendEmailToApi(email, template);
-
+        .then((template) => {
+            sendEmailToApi(email, template)
         })
         .catch((error) => {
-            console.log(error, "error al obtener el templete");
+            console.log(error, "error al obtener el template");
         })
 }
+
+// function sendEmail(miVariable) {
+//     miVariable.preventDefault()
+//     const email = miVariable.target.querySelector("input").value
+//     getTemplate()
+//         .then((response) => {
+//             // console.log(response);
+//             sendEmailToApi(email, template)
+
+//         })
+//         .catch((error) => {
+//             console.log(error, "error al obtener el templete");
+//         })
+// }
 
 
 

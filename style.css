@@ -54,6 +54,26 @@ button {
     background-color: #025157;
 }
 
+.marco {
+    display: flex;
+    justify-content: space-between;
+    /* width: 70%; */
+    margin: 100px auto;
+    padding-top: 20px;
+    align-items: center;
+    background-color: rgb(65, 64, 59);
+    padding: 2% 10%;
+}
+
+figure {
+    margin-top: 32px;
+}
+
+figure.intro>img {
+    text-align: center;
+    width: 100%;
+}
+
 .header {
     /*  margin-top (en-US), margin-right, margin-bottom y margin-left (en-US).*/
     /* Arriba | Derecha | Abajo | Izquierda */
