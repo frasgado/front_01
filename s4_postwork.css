@@ -1,0 +1,88 @@
+* {
+    /*
+box-sizing permite indicar qué propiedades intervienen para calcular el tamaño de la caja.
+*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.seccion_tarjetas {
+    display: grid;
+    background-color: #025157;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+    /* grid-gap: 8px; */
+    padding: 5% 10%;
+    /* border: cyan 5px solid; */
+}
+
+.seccion_tarjetas .articulo {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin: 30px 15px 0 15px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* border: red 5px solid; */
+}
+
+.seccion_tarjetas .articulo .izquierda {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+    /* flex-grow: 2; */
+    /* overflow: hidden; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    /* border: gold 5px solid; */
+}
+
+.seccion_tarjetas .articulo .izquierda>* {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    /* border: blueviolet 5px solid; */
+}
+
+.seccion_tarjetas .articulo .izquierda img {
+    width: 50px;
+}
+
+.seccion_tarjetas .articulo .izquierda h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+
+.seccion_tarjetas .articulo .izquierda p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+.seccion_tarjetas .articulo .izquierda a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.seccion_tarjetas .articulo .derecha {
+    /* padding: 30% 0 50%; */
+    /* padding-right: 0; */
+    flex: 1;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    /* border: pink 5px solid; */
+    right: -50px;
+    /* display: flex; */
+    /* align-items: ; */
+    /* justify-content: flex-end; */
+}
+
+.seccion_tarjetas .articulo .derecha img {
+    /* border: blue 5px solid; */
+    margin-top: 0;
+    height: 100%;
+}
